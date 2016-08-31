@@ -2,6 +2,11 @@
   "name": "Poementor",
   "version": "0.0.0",
   "description": "a “M.E.A.N.-stack” (Mongo, Express, Angular, Node) application for aspiring poets and lyricists that streamlines composing, editing, annotating, storing, and sharing all sorts of verse — as well as providing dynamic templating, modeling, and tutorial functionalities that conveniently aid writers in more easily conforming to various traditional poetical forms, metrical prosody structures, rhyme-schemes, etc.",
+  "main": "server.js",
+  "engines": {
+    "node": "5.11.0",
+    "npm": "3.8.6"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BFGriffith/Poementor.git"
@@ -16,7 +21,7 @@
     "babel",
     "Gulp"
   ],
-  "license": "custom",
+  "license": "SEE LICENSE IN license.md",
   "devDependencies": {
     "angular-jsdoc": "^1.3.3",
     "angular-mocks": "^1.5.2",
@@ -56,7 +61,13 @@
     "angular-animate": "^1.5.2",
     "angular-sanitize": "^1.5.2",
     "angular-ui-router": "^0.2.18",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
     "moment": "^2.12.0",
+    "mongoose": "^4.5.10",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
     "redux": "^3.3.1"
   }
 }
