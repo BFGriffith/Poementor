@@ -5,6 +5,8 @@ dist
 dev/
 doc/client
 client/test/visual/results
+es5/doc/client
+es5/client/test/visual/results
 .tmp
 
 # Apple OS metadata
