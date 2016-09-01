@@ -17,9 +17,9 @@
   function AppCtrl($rootScope) {
     var vm = this;
 
-    vm.title = 'My App'; // Default Title
+    vm.title = 'Poementor';
 
-    $rootScope.$on('$stateChangeSuccess', stateChangeSuccess); // Listen for state change
+    $rootScope.$on('$stateChangeSuccess', stateChangeSuccess); // listen for state change
 
     /**
      * @name stateChangeSuccess
