@@ -2,8 +2,8 @@
 var express  = require('express');
 var app      = express(); // create app with Express
 var mongoose = require('mongoose'); // mongoose for MongoDB
-//var port  	 = process.env.PORT || 8080;
-var port  	 = 8080;
+var port  	 = process.env.PORT || 8080;
+//var port = 8080;
 //var database = require('./config/database'); // load the database config
 var morgan   = require('morgan'); // log requests to the console (Express4)
 var bodyParser = require('body-parser'); // pull information from HTML POST (express4)
@@ -22,6 +22,7 @@ app.use(methodOverride());
 // ROUTES: »»——————————————————►
 //require('./routes.js')(app);
 app.get('/', function(req, res) {
+  //app.use('./client/scripts/*');
   res.sendFile('./client/index.html');
 });
 
