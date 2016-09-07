@@ -371,7 +371,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       options: {
         // This should be the name of your apps angular module
-        module: require('./bower.json').name || 'myApp',
+        module: require('./bower.json').Poementor || 'myApp',
         usemin: 'scripts/scripts.js',
         htmlmin: {
           collapseBooleanAttributes: true,
@@ -505,12 +505,12 @@ module.exports = function (grunt) {
     'ngAnnotate',
     'autoprefixer',
     'copy:dist',
-    // 'injector:sass',
-    // 'injector:scripts',
+    //'injector:sass',
+    //'injector:scripts',
     //'cdnify',
     'cssmin',
     'uglify',
-    //'filerev',
+    'filerev',
     'usemin',
     'htmlmin',
     'jsdoc'
