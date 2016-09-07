@@ -403,11 +403,12 @@ module.exports = function (grunt) {
             cwd: '<%= appSettings.app %>',
             dest: '<%= appSettings.dist %>',
             src: [
-              '*.{ico,png,txt}',
+              '*.{ico,png,txt,js}',
               '.htaccess',
               '*.html',
               'images/{,*/}*.{png,jpg,svg,webp}',
               'fonts/{,*/}*.*',
+              'app/**/*.{js,html}',
               '.tmp/concat/scripts/templates.js'
             ]
           },
@@ -504,10 +505,12 @@ module.exports = function (grunt) {
     'ngAnnotate',
     'autoprefixer',
     'copy:dist',
-    'cdnify',
+    // 'injector:sass',
+    // 'injector:scripts',
+    //'cdnify',
     'cssmin',
     'uglify',
-    'filerev',
+    //'filerev',
     'usemin',
     'htmlmin',
     'jsdoc'

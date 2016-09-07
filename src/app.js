@@ -6,7 +6,6 @@
  * @description
  * Main module of the application.
  */
-var Poementor = angular.module('Poementor', []);
 angular
   .module('Poementor', [
     'ngAnimate',
