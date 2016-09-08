@@ -5,10 +5,10 @@
       <div class="col-xs-11">
         <div class="btn-group btn-breadcrumb">
           <a href="#" class="btn btn-default"><span style="color: #FFFFFF;">____</span></a>
-          <a href="#" class="btn btn-default">HOME</a>
+          <a ui-sref=".home" class="btn btn-default">HOME</a>
         </div>
       </div>
-      <a href="#" class="col-xs-1" role="button" aria-pressed="false">&#10068;</a>
+      <a ui-sref=".learn-meter" class="col-xs-1" role="button" aria-pressed="false">&#10068;</a>
     </div>
     <!-- WELCOME Ø₪₪₪₪§╣ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ> -->
     <h1 class="text-center">Hello {{MainCtrl.user.username}}!</h1>
@@ -20,7 +20,7 @@
       <div class="row">
         <div class="col-xs-12">
           <p><strong>“Poementor” is for aspiring poets and lyricists: to streamline composing, editing, annotating, storing, and sharing all sorts of verse &mdash; as well as provide dynamic templating, modeling, and tutorial functionalities that conveniently aid writers in more easily conforming to various traditional poetical forms, metrical prosody structures, rhyme-schemes, etc.</strong></p>
-          <p id="want_write_poem"><a href="#">&#9112;<span class="badge">Want to write a poem?</span>&#128395;</a></p>
+          <p id="want_write_poem"><a ui-sref=".poem-selector">&#9112;<span class="badge">Want to write a poem?</span>&#128395;</a></p>
         </div>
       </div>
     </div>
@@ -28,18 +28,18 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="nav nav-tabs nav-center">
-          <li class="active"><a href="#">HOME</a></li>
+          <li class="active"><a ui-sref=".home">HOME</a></li>
           <li><a href="#">my ANTHOLOGY</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">poetical forms<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">haiku &#20467;&#21477;</a></li>
-              <li><a href="#">limerick</a></li>
-              <li><a href="#">Shakespearean sonnet</a></li>
+              <li><a ui-sref=".haiku">haiku &#20467;&#21477;</a></li>
+              <li><a ui-sref=".limerick">limerick</a></li>
+              <li><a ui-sref=".shakespearean">Shakespearean sonnet</a></li>
             </ul>
           </li>
-          <li><a href="#">learn metrical “feet”</a></li>
-          <li><a href="#">about “Poementor”</a></li>
+          <li><a ui-sref=".learn-meter">learn metrical “feet”</a></li>
+          <li><a ui-sref=".about">about “Poementor”</a></li>
         </ul>
       </div>
     </div>
