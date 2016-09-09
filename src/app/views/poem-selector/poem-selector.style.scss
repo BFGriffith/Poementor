@@ -1,0 +1,38 @@
+label {
+  color: #777777;
+}
+.panel-heading .accordion-toggle:after {
+  /* symbol for "opening" panels */
+  font-family: 'Glyphicons Halflings';
+  /* essential for enabling glyphicon */
+  content: "\e114";
+  /* adjust as needed, taken from bootstrap.css */
+  float: left;
+  /* adjust as needed */
+  color: grey;
+  /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\e080";
+  /* adjust as needed, taken from bootstrap.css */
+}
+#want_write_poem {
+  text-align: center !important;
+}
+#Mentor_seated img {
+  text-align: center;
+  object-position: scale-down;
+  max-width: 100%;
+}
+#poetical_forms_submenuTITLE {
+  font-size: 1.5em;
+}
+#poetical_forms_submenuLIST li {
+  margin-left: -25px;
+  font-size: 1em;
+}
+#poetical_forms_TABLEhead {
+  font-weight: bold;
+  font-size: 1.5em;
+}
