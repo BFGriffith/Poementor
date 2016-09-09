@@ -1,35 +1,31 @@
-<div class="container">
-  <div class="header">
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" ui-sref=".home">Poementor</a>
+<nav role="navigation">
+    <div id="menuToggle">
+      <!-- fake / hidden checkbox used as click reciever for :checked selector -->
+      <input type="checkbox" />
+      <!-- hamburger spans -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <li ui-sref-active="active"><a ui-sref=".home">HOME</a></li>
+        <li><a ui-sref=".anthology">my ANTHOLOGY</a></li>
+        <!-- poetical forms -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title" id="poetical_forms_submenuTITLE"><a class="accordion-toggle" data-toggle="collapse" data-parent="#poetical_forms_submenu" href="#poetical_forms_submenu">poetical forms</a></h4>
+          </div>
+          <div id="poetical_forms_submenu" class="panel-collapse collapse">
+            <div class="panel-body">
+              <ul id="poetical_forms_submenuLIST">
+                <li><a ui-sref=".haiku">haiku &#20467;&#21477;</a></li>
+                <li><a ui-sref=".limerick">limerick</a></li>
+                <li><a ui-sref=".Shakespearean">Shakespearean sonnet</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li ui-sref-active="active">
-              <a ui-sref=".home">home</a>
-            </li>
-
-            <li ui-sref-active="active">
-              <a ui-sref=".about">about</a>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-  </div>
-
+        <li ui-sref-active="active"><a ui-sref=".about">about “Poementor”</a></li>
+      </ul>
+    </div>
+  </nav>
   <div ui-view></div>
-
-</div>

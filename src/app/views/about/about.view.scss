@@ -1,4 +1,45 @@
 // about.scss
-.hello {
-  color: red;
-}
+.well,
+  .panel,
+  .panel-heading {
+    background-color: rgb(245, 245, 245);
+    background-color: rgba(245, 245, 245, 0.5) !important;
+    border-color: #B88147;
+    border-color: rgba(184, 129, 71, 0.8)
+  }
+
+  #learn_metrical_feet_header {
+    text-align: center;
+  }
+
+  label {
+    color: #777777;
+  }
+
+  .panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content: "\e114";
+    /* adjust as needed, taken from bootstrap.css */
+    float: left;
+    /* adjust as needed */
+    color: grey;
+    /* adjust as needed */
+  }
+
+  .panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";
+    /* adjust as needed, taken from bootstrap.css */
+  }
+
+  html,
+  body,
+  form {
+    background: url(../../../images/old_paper_texture.jpg) no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

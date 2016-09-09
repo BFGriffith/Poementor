@@ -1,0 +1,94 @@
+<!-- limerick composer -->
+<div class="container" ng-controller="limerick as limerick">
+  <h2 class="poemTitle text-center">{{limmerickTitle}} <span><a href="#">&#128395;</a></span><span class="badge">limmerick</span></h2>
+  <hr>
+
+  <form class="form-horizontal" id="limerick_template">
+    <!-- limerick stanza line 1 -->
+    <label for="limerick_stanzaLine1" class="metricalLine">(&cup;) &cup;&prime; &cup;&cup;&prime; &cup;&cup;&prime; (&cup;&cup;)</label>
+    <label class="rhymeDropdownLabel" for="rhymeSchemeA1">&#9998; rhymes</label>
+    <div class="input-group col-xs-12">
+      <span class="input-group-addon">1</span>
+      <input type="text" class="form-control poemLine" id="limerick_stanzaLine1" placeholder="There once was a man from Nantucket...">
+      <span class="input-group-addon">
+          <span class="badge">A</span>
+      <input type="checkbox" aria-label="line complete?">
+      </span>
+      <select class="form-control rhymeSchemeA" id="rhymeSchemeA1">
+        <option>rhymes</option>
+      </select>
+    </div>
+    <!-- limerick stanza line 2 -->
+    <label for="limerick_stanzaLine2" class="metricalLine">(&cup;) &cup;&prime; &cup;&cup;&prime; &cup;&cup;&prime; (&cup;&cup;)</label>
+    <label class="rhymeDropdownLabel" for="rhymeSchemeA2">&#9998; rhymes</label>
+    <div class="input-group col-xs-12">
+      <span class="input-group-addon">2</span>
+      <input type="text" class="form-control poemLine" id="limerick_stanzaLine2" placeholder="">
+      <span class="input-group-addon">
+          <span class="badge">A</span>
+      <input type="checkbox" aria-label="line complete?">
+      </span>
+      <select class="form-control rhymeSchemeA" id="rhymeSchemeA2">
+        <option>rhymes</option>
+      </select>
+    </div>
+    <!-- limerick stanza line 3 -->
+    <label for="limerick_stanzaLine3" class="metricalLine">(&cup;) &cup;&prime; &cup;&cup;&prime; (&cup;)</label>
+    <label class="rhymeDropdownLabel" for="rhymeSchemeB1">&#9998; rhymes</label>
+    <div class="input-group col-xs-12">
+      <span class="input-group-addon">3</span>
+      <input type="text" class="form-control poemLine" id="limerick_stanzaLine3" placeholder="">
+      <span class="input-group-addon">
+          <span class="badge">B</span>
+      <input type="checkbox" aria-label="line complete?">
+      </span>
+      <select class="form-control rhymeSchemeB" id="rhymeSchemeB1">
+        <option>rhymes</option>
+      </select>
+    </div>
+    <!-- limerick stanza line 4 -->
+    <label for="limerick_stanzaLine4" class="metricalLine">(&cup;) &cup;&prime; &cup;&cup;&prime; (&cup;)</label>
+    <label class="rhymeDropdownLabel" for="rhymeSchemeB1">&#9998; rhymes</label>
+    <div class="input-group col-xs-12">
+      <span class="input-group-addon">4</span>
+      <input type="text" class="form-control poemLine" id="limerick_stanzaLine4" placeholder="">
+      <span class="input-group-addon">
+          <span class="badge">B</span>
+      <input type="checkbox" aria-label="line complete?">
+      </span>
+      <select class="form-control rhymeSchemeB" id="rhymeSchemeB2">
+        <option>rhymes</option>
+      </select>
+    </div>
+    <!-- limerick stanza line 5 -->
+    <label for="limerick_stanzaLine2" class="metricalLine">(&cup;) &cup;&prime; &cup;&cup;&prime; &cup;&cup;&prime; (&cup;&cup;)</label>
+    <label class="rhymeDropdownLabel" for="rhymeSchemeA3">&#9998; rhymes</label>
+    <div class="input-group col-xs-12">
+      <span class="input-group-addon">5</span>
+      <input type="text" class="form-control poemLine" id="limerick_stanzaLine5" placeholder="">
+      <span class="input-group-addon">
+          <span class="badge">A</span>
+      <input type="checkbox" aria-label="line complete?">
+      </span>
+      <select class="form-control rhymeSchemeA" id="rhymeSchemeA3">
+        <option>rhymes</option>
+      </select>
+    </div>
+    <br>
+    <!-- POEM COMPOSITION BUTTONS -->
+    <div class="form-group row text-center poemComposerButtonsContainer">
+      <div class="col-xs-12 col-md-8">
+        <button type="submit" class="btn btn-default">add a stanza?</button>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <button type="submit" class="btn btn-default">archive current version of poem</button>
+      </div>
+    </div>
+  </form>
+  <!-- limerick tutorial -->
+  <div class="well">
+    <p>A limerick is a form of poetry traditionally written in one or more five-line stanzas, and using a predominantly anapestic meter (<strong>&cup;&cup;&prime;</strong>) with a strict rhyme scheme (<b>AABBA</b>). Limmericks are also traditionally bawdy,
+      ribald, or cleverly obscene &mdash; almost invariably written with humorous intent... The third and fourth lines of a limmerick are usually shorter than the other three. The form first appeared in England in the early years of the 18th century,
+      and was popularized by Edward Lear in the 19th century.</p>
+  </div>
+</div>
